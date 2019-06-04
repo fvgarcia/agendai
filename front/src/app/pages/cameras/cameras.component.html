@@ -1,0 +1,8 @@
+<div *ngFor="let camera of cameras" class="row mb-4">
+  <div class="col-md-6">
+    {{ camera.nome }}
+  </div>
+  <div class="col-md-6">
+    <img src="../../../assets/{{ camera.imagem }}" style="width: 100%;">
+  </div>
+</div>

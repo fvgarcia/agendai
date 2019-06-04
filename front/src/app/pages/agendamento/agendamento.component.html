@@ -1,0 +1,83 @@
+<div class="row">
+    <div *ngIf="$retorno">
+        {{ $retorno.senha }}
+    </div>
+    <div class="col-md-12">
+        <h5>Crie uma rotina de agendamento semanal</h5>
+        <form>
+            <!-- <div class="form-group">
+                <label class="mr-sm-2" for="matricula">Matrícula</label>
+                <input type="text" [(ngModel)]="matricula" name="matricula" placeholder="Digite sua Matrícula" required class="form-control" id="matricula">
+            </div>
+            <div class="form-group">
+                <label class="mr-sm-2" for="senha">Senha</label>
+                <input type="text" [(ngModel)]="senha" name="senha" placeholder="Digite sua senha" required class="form-control" id="senha">
+            </div> 
+            <div class="form-group">
+                <label class="mr-sm-2" for="dataInicio">Inicio</label>
+                <input type="date" [(ngModel)]="dataInicio" name="dataInicio" required class="form-control" id="dataInicio">
+            </div>
+            <div class="form-group">
+                <label class="mr-sm-2" for="dataFim">Fim</label>
+                <input type="date" [(ngModel)]="dataFim" name="dataFim" required class="form-control" id="dataFim">
+            </div>-->
+            <div class="form-group">
+                    <label for="restaurante">Restaurante</label>
+                    <select id="restaurante" class="form-control">
+                      <option>-- Selecionar um valor --</option>
+                      <option>RU Campus I</option>
+                      <option>RU Campus II</option>                   
+                    </select>
+                  </div>
+            <div class="form-group">
+                <label class="mr-sm-2">Refeições</label>
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="refeicaoCheckbox1" value="option1">
+                    <label class="form-check-label" for="refeicaoCheckbox1">Café</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="refeicaoCheckbox2" value="option2">
+                    <label class="form-check-label" for="refeicaoCheckbox2">Almoço</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="refeicaoCheckbox3" value="option3">
+                    <label class="form-check-label" for="refeicaoCheckbox3">Jantar</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="refeicaoCheckbox4" value="option4">
+                    <label class="form-check-label" for="refeicaoCheckbox4">Distribuição</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="refeicaoCheckbox5" value="option5">
+                    <label class="form-check-label" for="refeicaoCheckbox5">Distribuição - Kit Desjejum</label>
+                </div>          
+            </div>
+            <div class="form-group">
+                    <label class="mr-sm-2">Dias da semana</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Segunda</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Terça</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Quarta</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                        <label class="form-check-label" for="inlineCheckbox4">Quinta</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                        <label class="form-check-label" for="inlineCheckbox5">Sexta</label>
+                    </div>          
+                </div>
+            <button (click)="submit()" class="btn btn-primary float-right">Agendar refeição</button>
+        </form>
+    </div>
+</div>

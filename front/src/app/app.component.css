@@ -1,0 +1,8 @@
+body {
+    height: 100vh;
+    background-image: url("../assets/banner.jpg");
+    background-repeat: initial;
+}
+.container{
+    background: white;
+}
